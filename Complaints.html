@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>COMPLAINT US</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/89f0d58096.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div class="main">
+        <div class="navbar">
+            <div class="icon">
+                <div class="logo-JoinUs">
+                    <img src=elogo.jpg alt="Your Image">
+                </div>
+                <div class="content">
+                    <h1>Sugestions Please</h1>
+                    <p class="paragraph">Submit Your Data, We will reach you as soon as possible. <br> We help you to
+                        improve in managing
+                        students' data <br> such as their attendance, result, fees, and many more. <br>
+                        We connect institution with today's technology and increases <br> growth in thier productivity
+                    </p>
+                    <div class="container">
+                        <form id="myForm">
+                            <h1 class="submit-txt">Submit Your Complaints</h1>
+                            <input type="name" name="designation-name" id="designation-name"
+                                placeholder="Enter Your Name">
+                            <input type="name" name="institution-name" id="institution-name"
+                                placeholder="Enter Complaints Subject">
+                            <input type="email" name="email" id="email" placeholder="Enter Complaints Description">
+                            <input type="name" name="phone-number" id="phone-number"
+                                placeholder="Enter Your Address">
+                            <button id="send-button">Submit Complaints</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script>
+        var btn = document.getElementById("send-button")
+        btn.addEventListener('click', function (e) {
+            e.preventDefault()
+            
+            var designation = document.getElementById("designation-name").value;
+            var institution = document.getElementById("institution-name").value;
+            var email = document.getElementById("email").value;
+            var phone = document.getElementById("phone-number").value;
+            var body = 'Name: ' + designation + '<br/> Complaints_Subject: ' + institution + '<br/>  Complaints_description: ' + email
+                + '<br/> Phone Number: ' + phone
+
+            Email.send({
+                Host: "smtp.elasticemail.com",
+                Username: "abhishek.ajha09@gmail.com",
+                Password: "0C72C6FC04847F791830824D25FCDBF2C8F1",
+                To: 'abhishek.ajha09@gmail.com',
+                From: "abhishek.ajha09@gmail.com",
+                Subject: "Enquiry Mail INDOPS",
+                Body: body
+            }).then(
+                message => alert(message)
+            );
+
+            document.getElementById('myForm').reset();  
+        }) 
+    </script>
+</body>
+
+</html>

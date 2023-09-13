@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Log In</title>
+         <!-- Cool Google Fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Bowlby+One+SC&display=swap" rel="stylesheet">
+        <!-- Our stylesheet -->
+        <link rel="stylesheet" type="text/css" href="signin.css">
+    </head>
+    <body>
+
+        <div class="logo">
+            <img src=elogo.jpg alt="Your Image">
+
+            <h1>Sign In </h1>
+            <p>EPR ensures the management of e-waste in environmentally <br>
+                friendly manner, hence reduce the harmful impact of e-waste <br> on 
+                environment. EPR Authorization from Central Pollution <br> Control Board
+                 (CPCB) enhance the goodwill <br> of the product and brand reputation 
+                 in the market.</p>
+        </div>
+
+        <div id="content_container">
+            <div id="form_container">
+                <div id="form_header_container">
+                    <h1 id="form_header"> SIGN IN </h1>
+                
+                </div>
+
+                <div id="form_content_container">
+                    <div id="form_content_inner_container">
+                        <input type="email" id="email" placeholder="Enter Email">
+                        <input type="password" id="password" placeholder="Enter Password">
+                        <div id="button_container">
+                            <button onclick="login ()">Sign In</button>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-app.js"></script>
+
+    <!-- TODO: Add SDKs for Firebase products that you want to use
+         https://firebase.google.com/docs/web/setup#available-libraries -->
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.6.8/firebase-database.js"></script>
+
+    <!-- Our script must be loaded after firebase references -->
+    <script src="register.js"></script>
+
+</html>

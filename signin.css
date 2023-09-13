@@ -1,0 +1,170 @@
+html, body {
+    width: 100%;
+    height: 100%;
+    background-image: url(11.jpg);
+    background-size: cover; /* Adjusts the image size to cover the entire container */
+    background-repeat: no-repeat; /* Prevents image repetition */
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+}
+#content_container {
+    width: 30%;
+    height: 60%;
+    position: absolute;
+    right: 250px;
+}
+
+#form_container {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to top, rgba(23, 41, 51, 0.8)10%, rgba(23, 41, 51, 0.8)0%);
+    box-shadow: 0 0 50px -20px #000;
+    border-radius: 2%;
+
+    overflow: hidden;
+}
+
+#form_header_container {
+    width: 100%;
+    height: 5%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    float: left;
+
+    padding: 20px;
+    padding-bottom: 30px;
+    padding-top: 30px;
+
+    border-bottom: 1px solid transparent;
+    border-image: -webkit-linear-gradient(25deg, #FFBE0B, #FB5607, #FF006E, #8338EC, #3A86FF) 20;
+    background: linear-gradient(to top, rgba(23, 41, 51, 0.8)10%, rgba(23, 41, 51, 0.8)0%);
+}
+
+#form_header {
+    display: inline-block;
+    font-size: 25px;
+    font-family: Bowlby One SC;
+    font-weight: 900;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #0ceee3;
+}
+
+#form_content_container {
+    width: 100%;
+    height: 90%;
+
+    float: left;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding-top: 30px;
+}
+
+#form_content_inner_container {
+    width: 75%;
+    height: 100%;
+
+    float: left;
+
+}
+
+input {
+    width: 100%;
+    height: 40px;
+
+    padding-left: 10px;
+    margin-bottom: 20px;
+
+    background: transparent;
+    font-family: Montserrat;
+    font-weight: 500;
+    color: #fff;
+    font-size: 15px;
+    border-bottom: 2px solid transparent;
+    border-top-left-radius: 2%;
+    border-top-right-radius: 2%;
+    border-color: #0ceee3;
+}
+
+
+button {
+    width: 250px;
+    height: 40px;
+    margin-top: 10px;
+    border: none;
+    margin-top: 30px;
+    position: relative;
+    left: 22px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #0ceee3;
+    color: #029e4d;
+    align-items: center;
+    transition: .4s ease;
+}
+.content button a {
+    text-decoration: none;
+    color: #0ceee3;
+    transition: .3s ease;
+}
+button:hover{
+    background-color: #fff;
+    color: #0ceee3;
+}
+
+.logo img {
+    height: 150px;
+    width: 150x;
+    float: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    position: absolute;
+    top: 80px;
+    left: 40px;
+}
+
+.logo h1 {
+    font-size: 25px;
+    font-family: Bowlby One SC;
+    font-weight: 900;
+    text-transform: uppercase;
+    float: left;
+    padding-left: 20px;
+    padding-top: 20px;
+    letter-spacing: 1px;
+    position: absolute;
+    top: 220px;
+    left: 40px;
+
+}
+
+.logo p {
+    font-size: 15px;
+    float: left;
+    position: absolute;
+    top: 250px;
+    left: 40px;
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    padding-top: 30px;
+
+}

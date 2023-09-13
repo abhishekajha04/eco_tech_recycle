@@ -1,0 +1,391 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.main {
+    width: 100;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0)100%, rgba(0, 0, 0, 0)100%), url(11.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 109vh;
+}
+
+.navbar {
+    width: 1200px;
+    height: 75px;
+    margin: auto;
+}
+
+.icon {
+    width: 200px;
+    float: left;
+    height: 70px;
+}
+.logo img {
+    height: 100px;
+    width: auto;
+    padding-left: 20px;
+    padding-top: 20px;
+    position: absolute;
+    top: 80px;
+    left: 40px;
+}
+
+.menu {
+    width: 150px;
+    float: right;
+    height: 70px;
+}
+
+ul {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li {
+    list-style: none;
+    margin-left: 100px;
+    margin-top: 27px;
+    font-size: 14px;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #03801e;
+    white-space: nowrap;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+ul li a:hover {
+    color: #098892;
+}
+
+.content {
+    width: 1200px;
+    top: 250px;
+    left: 40px;
+    height: auto;
+    position: absolute;
+    margin: auto;
+    color: rgb(8, 8, 8);
+}
+
+.content .paragraph {
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    padding-top: 10px;
+}
+
+.content h1 {
+    font-family: 'Times New Roman';
+    font-size: 35px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+}
+
+.content .cn {
+    width: 160px;
+    height: 40px;
+    background: #03801e;
+    border: none;
+    margin-bottom: 10px;
+    margin-left: 20px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s ease;
+}
+
+.content .cn a {
+    text-decoration: none;
+    color: #0bdcd5;
+    transition: .3s ease;
+}
+.cn:hover{
+    color: #03801e;
+    background-color: #0bdcd5;
+}
+.footer{
+    background: #000000;
+    color: #d3d3d3;
+    height: 250px;
+}
+.footer-content{
+    height: 200px;
+    display: flex;
+}
+.footer .footer-content .footer-section {
+    flex: 1;
+    padding: 20px;
+    margin-left: 30px;
+    margin-top: 20px;
+}
+
+.footer .footer-content .contact .info span {
+    display: block;
+    font-size: 1.1em;
+    margin-bottom: 8px;
+}
+
+.footer .footer-content .address{
+    font-size: 2.2em;
+    margin-bottom: 10px;
+}
+
+.footer .footer-content .copyright {
+    display: grid;
+    margin-right: 30px;
+}
+.footer .footer-content .copyright .heading{
+    font-size: 1.1em;
+    float: right;
+}
+.footer .footer-content .copyright p{
+    font-size: 1.1em;
+    float: right;
+}
+.footer .footer-content .copyright img{
+    height: 50px;
+    width: auto;
+    float: right;
+}
+
+/*Join Us Webpage*/
+
+.logo-JoinUs img {
+    height: 100px;
+    width: auto;
+    padding-left: 20px;
+    padding-top: 20px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.container{
+    width: 280px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(23, 41, 51, 0.8)50%, rgba(23, 41, 51, 0.8)50%);
+    position: absolute;
+    top: -140px;
+    left: 870px;
+    border-radius: 10px;
+    padding: 25px;
+}
+form .submit-txt{
+    width: 250px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #173650;
+    font-size: 1.1em;
+    background-color: white;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+form input{
+    width: 250px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #174f7c;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+form input:focus {
+    outline: none;
+}
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+button {
+    width: 250px;
+    height: 40px;
+    margin-top: 20px;
+    background: #2874b3;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: .4s ease;
+}
+.content button a {
+    text-decoration: none;
+    color: #0ceee3;
+    transition: .3s ease;
+}
+button:hover{
+    background-color: #fff;
+    color: #0ceee3;
+}
+/*Join Us Contact Support*/
+
+.content-support {
+    width: 1200px;
+    top: 200px;
+    left: 40px;
+    height: auto;
+    position: absolute;
+    margin: auto;
+    color: white;
+}
+
+.content-support .paragraph {
+    padding-left: 20px;
+    padding-bottom: 25px;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    line-height: 30px;
+    padding-top: 10px;
+}
+
+.content-support h1 {
+    font-family: 'Times New Roman';
+    font-size: 35px;
+    padding-left: 20px;
+    letter-spacing: 2px;
+}
+
+.content-support .info{
+    margin-left: 20px;
+    margin-top: -50px;
+}
+
+.content-support .info span {
+    display: block;
+    font-family: Arial;
+    letter-spacing: 1.2px;
+    margin-left: 20px;
+    margin-bottom: 8px;
+}
+
+.profile{
+    position: absolute;
+    top: -40px;
+    left: 930px;
+    border-radius: 10px;
+    padding: 25px;
+
+}
+
+.profile img {
+    height: 180px;
+    width: auto;
+}
+
+.profile p {
+    text-align: center;
+    margin-top: 8px;
+    margin-bottom: 8px;
+    font-size: 1.1em;
+    font-family: Arial;
+}
+.content-support a {
+    text-decoration: none;
+    color: #fff;
+    margin-left: 20px;
+    white-space: nowrap;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+}
+
+.content-support a:hover {
+    color: #1766aa;
+}
+
+/*Join Us Webpage*/
+
+/*Join Us Webpage*/
+
+.logo-JoinUs img {
+    height: 100px;
+    width: auto;
+    padding-left: 20px;
+    padding-top: 20px;
+    position: absolute;
+    top: 40px;
+    left: 40px;
+}
+
+.container{
+    width: 280px;
+    height: 380px;
+    background: linear-gradient(to top, rgba(23, 41, 51, 0.8)50%, rgba(23, 41, 51, 0.8)50%);
+    position: absolute;
+    top: -140px;
+    left: 870px;
+    border-radius: 10px;
+    padding: 25px;
+}
+form .submit-txt{
+    width: 250px;
+    font-family: sans-serif;
+    text-align: center;
+    color: #173650;
+    font-size: 1.1em;
+    background-color: white;
+    border-radius: 10px;
+    margin: 2px;
+    padding: 8px;
+}
+
+form input{
+    width: 250px;
+    height: 35px;
+    background: transparent;
+    border-bottom: 1px solid #174f7c;
+    border-top: none;
+    border-right: none;
+    border-left: none;
+    color: #fff;
+    font-size: 15px;
+    letter-spacing: 1px;
+    margin-top: 30px;
+    font-family: sans-serif;
+}
+form input:focus {
+    outline: none;
+}
+::placeholder{
+    color: #fff;
+    font-family: Arial;
+}
+button {
+    width: 250px;
+    height: 40px;
+    margin-top: 20px;
+    border: none;
+    margin-top: 30px;
+    font-size: 18px;
+    border-radius: 10px;
+    cursor: pointer;
+    color: #fff;
+    transition: .4s ease;
+}
+.content button a {
+    text-decoration: none;
+    color: #0ceee3;
+    transition: .3s ease;
+}
+button:hover{
+    background-color: #fff;
+    color: #0ceee3;
+}
